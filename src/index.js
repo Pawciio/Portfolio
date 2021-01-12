@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Root from "./Views/Root"
 import reportWebVitals from "./reportWebVitals";
+import './assets/Font/VarelaRound-Regular.ttf'; 
 
 ReactDOM.render(
   <React.StrictMode>

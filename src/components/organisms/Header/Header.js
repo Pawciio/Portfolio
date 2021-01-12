@@ -3,14 +3,16 @@ import styled from 'styled-components';
 import Background from '../../atoms/BackgroundSection/BackgroundSection'
 import BackgroundHeader from '../../../assets/BackgroundHeader/BackgroundHeader.png'
 
-const Wrapper = styled.div`
-    margin: 5px;
+const WrapperElement = styled.div`
+    height: 1500px; // test height
 `;
 
 const Header = () => (
     <Background Background={BackgroundHeader} >
-      <h1>Hello</h1>
+      <WrapperElement>
+        
+      </WrapperElement>
     </Background>
 );
 
-export default Header;
+export default Header;  
