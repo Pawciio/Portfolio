@@ -6,7 +6,6 @@ import Header from '../components/organisms/Header/Header';
 
 function Root() {
   return (
-    
      <>
      <GlobalStyle />
      <ThemeProvider theme={theme}>
