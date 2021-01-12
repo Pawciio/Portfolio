@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 
 const BackgroundDiv = styled.div`
-    background-color: ${({ theme }) => theme.AdditionalColorSection }
+  background-color: ${({ theme }) => theme.AdditionalColorSection};
+  width: 70vw;
+  padding: 4em 2em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 `;
 
-export default BackgroundDiv
+export default BackgroundDiv;
