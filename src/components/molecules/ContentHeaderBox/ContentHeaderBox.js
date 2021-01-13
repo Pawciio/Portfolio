@@ -4,7 +4,7 @@ import TitleBox from '../../atoms/TitleBox/TitleBox';
 import BackgroundDiv from '../../atoms/ContentBox/ContentBox';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import AddImager from '../../atoms/AddImager/AddImager';
-import Icons from '../../../assets/quote.png';
+import Icons from '../../../assets/Other-DetailImage/quote.png';
 
 const Wrapper = styled.div`
   .ContentText {
