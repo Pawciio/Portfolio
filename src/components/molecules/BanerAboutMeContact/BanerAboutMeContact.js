@@ -26,17 +26,27 @@ const WrapperElement = styled.div`
   margin: 0 2em;
   display: flex;
   align-items: center;
+
+  @media ${({ theme }) => theme.mediaQueries.xs} {
+    p {
+      font-size: 18px;
+    }
+    .scalImage {
+      transform: scale(0.7);
+      margin: 0.1em;
+    }
+  }
 `;
 
 const BanerAboutMeContact = () => (
   <Wrapper>
     <div className="bgColContener">
       <WrapperElement>
-        <AdderImage icons={ContactImage} width="90px" height="80px" margin="1em" />
+        <AdderImage className="scalImage" icons={ContactImage} width="90px" height="80px" margin="1em" />
         <Paragraph WhiteCol>Skontaktuj się ze mną</Paragraph>
       </WrapperElement>
       <WrapperElement>
-        <AdderImage icons={GitImage} width="75px" height="70px" margin="1em" />
+        <AdderImage className="scalImage" icons={GitImage} width="75px" height="70px" margin="1em" />
         <Paragraph WhiteCol>Zobacz moje projekty</Paragraph>
       </WrapperElement>
     </div>
