@@ -39,7 +39,7 @@ const Baner = styled.div`
   background: ${({ theme }) => theme.colors.BlackOpacity};
   padding: 1em;
   color: white;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   bottom: 0;
   display: flex;

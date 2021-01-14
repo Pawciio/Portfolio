@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   color: white;
   text-align: center;
   font-size: ${({ name }) => (name ? '36px' : '24px')};
+  text-transform: ${({ Upper }) => (Upper ? 'uppercase' : null)};
 
   @media ${({ theme }) => theme.mediaQueries.xs} {
     max-width: 265px;
@@ -25,7 +26,7 @@ const TitleBox = ({ children, Name }) => (
         <p>{children}</p>
       </Wrapper>
     ) : (
-      <Wrapper>
+      <Wrapper Upper>
         <p>{children}</p>
       </Wrapper>
     )}

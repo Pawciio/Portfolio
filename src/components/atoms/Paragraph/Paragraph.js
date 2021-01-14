@@ -6,6 +6,7 @@ const Paragraph = styled.p`
   text-transform: ${({ Uppercase }) => (Uppercase ? 'uppercase' : null)};
   display: flex;
   align-items: center;
+  color: ${({ WhiteCol }) => (WhiteCol ? 'White' : null)};
 `;
 
 export default Paragraph;

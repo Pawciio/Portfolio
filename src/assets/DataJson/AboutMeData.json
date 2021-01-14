@@ -1,0 +1,22 @@
+{
+  "DataAboutMe": [
+    {
+      "id": 0,
+      "title": "Rozwój",
+      "discription": "Aktualnie studiuję podyplomowo na kierunku Frontend z Angular, ciągle się dokształcam, robię kursy, czytam literaturę informatyczną.",
+      "image": "rozwojIcon"
+    },
+    {
+      "id": 1,
+      "title": "Języki",
+      "discription": "Język angielski znam na poziomie komunikatywnym ze słownictwem technicznym.",
+      "image": "jezykiIcon"
+    },
+    {
+      "id": 2,
+      "title": "Pasje",
+      "discription": "Moje pasje to również motoryzacja i gry komputerowe.",
+      "image": "pasjeIcon"
+    }
+  ]
+}
