@@ -9,24 +9,25 @@ import AddImager from '../../atoms/AddImager/AddImager';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import MeIcon from '../../../assets/AboutMe/oMnieZdjęcie.png';
 import Data from '../../../assets/DataJson/AboutMeData.json';
+import BanerAboutMeContact from '../../molecules/BanerAboutMeContact/BanerAboutMeContact';
 
-import rozwojIcon from '../../../assets/AboutMe/oMnieRozwoj.png';
-import jezykiIcon from '../../../assets/AboutMe/oMnieJezyki.png';
-import pasjeIcon from '../../../assets/AboutMe/oMniePasje.png';
+// import rozwojIcon from '../../../assets/AboutMe/oMnieRozwoj.png';
+// import jezykiIcon from '../../../assets/AboutMe/oMnieJezyki.png';
+// import pasjeIcon from '../../../assets/AboutMe/oMniePasje.png';
 
 const WrapperContent = styled.div`
-  padding-top: 5em;
+  padding: 6em 0;
 
   .StyleBox {
     justify-content: space-around;
     flex-wrap: wrap;
   }
 
-  /* @media ${({ theme }) => theme.mediaQueries.md} {
+  @media ${({ theme }) => theme.mediaQueries.md} {
     .StyleBox {
       width: 100vw;
     }
-  } */
+  }
 `;
 
 const WrapperElement = styled.div`
@@ -60,6 +61,7 @@ const AboutMe = () => (
         ))}
       </BackgroundDiv>
     </WrapperContent>
+    <BanerAboutMeContact />
   </BackgroundSection>
 );
 
