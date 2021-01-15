@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Paragraph = styled.p`
   margin: 0;
@@ -7,6 +7,12 @@ const Paragraph = styled.p`
   display: flex;
   align-items: center;
   color: ${({ WhiteCol }) => (WhiteCol ? 'White' : null)};
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      font-size: 26px;
+    `}
 `;
 
 export default Paragraph;

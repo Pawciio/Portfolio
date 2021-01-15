@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 
 import Header from '../components/organisms/Header/Header';
 import AboutMe from '../components/organisms/AboutMe/AboutMe';
+import Technologies from '../components/organisms/Technologies/Technologies';
 
 function Root() {
   return (
@@ -13,6 +14,7 @@ function Root() {
       <ThemeProvider theme={theme}>
         <Header />
         <AboutMe />
+        <Technologies />
       </ThemeProvider>
     </>
   );

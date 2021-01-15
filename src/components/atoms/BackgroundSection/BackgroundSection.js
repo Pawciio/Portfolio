@@ -6,6 +6,7 @@ const Background = styled.section`
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  padding: ${({ Padding }) => Padding};
 `;
 
 export default Background;
