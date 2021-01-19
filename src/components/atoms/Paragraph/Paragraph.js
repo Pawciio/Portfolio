@@ -12,6 +12,7 @@ const Paragraph = styled.p`
     secondary &&
     css`
       font-size: 26px;
+      padding: ${({ Padding }) => Padding};
     `}
 `;
 

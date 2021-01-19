@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const BackgroundDiv = styled.div`
   background-color: ${({ theme, Bgblack }) => (Bgblack ? 'black' : theme.colors.AdditionalColorSection)};
@@ -11,6 +11,12 @@ const BackgroundDiv = styled.div`
   @media ${({ theme }) => theme.mediaQueries.sm} {
     width: 100vw;
   }
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      justify-content: space-between;
+    `}
 `;
 
 export default BackgroundDiv;
