@@ -13,7 +13,6 @@ import SingleIcon from '../../../assets/TestImage.png';
 const WrapperProjectsBox = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 
   .positionStyledContent:nth-child(even) {
     margin: 5.5em 0;
@@ -23,13 +22,17 @@ const WrapperProjectsBox = styled.div`
     .positionStyledElementEven {
       display: flex;
       flex-direction: column;
-      align-item: flex-end;
+      align-items: flex-end;
+    }
+
+    .positionStyledButtonBox {
+      flex-direction: row-reverse;
     }
   }
 `;
 
 const WrapperElement = styled.div`
-  width: 100%;
+  max-width: 515px;
   margin: 0 3em;
 `;
 
@@ -76,7 +79,7 @@ const Projects = () => (
               {item.Title}
             </Paragraph>
             <Paragraph WhiteCol>{item.disc}</Paragraph>
-            <WrapperButton>
+            <WrapperButton className="positionStyledButtonBox">
               <Button href={item.hrefVisit} target="_blank" Color>
                 Wyświetl stronę
               </Button>

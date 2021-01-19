@@ -7,6 +7,7 @@ const BackgroundDiv = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
 
   @media ${({ theme }) => theme.mediaQueries.sm} {
     width: 100vw;
@@ -15,7 +16,8 @@ const BackgroundDiv = styled.div`
   ${({ secondary }) =>
     secondary &&
     css`
-      justify-content: space-between;
+      justify-content: space-around;
+      text-align: left;
     `}
 `;
 
