@@ -7,6 +7,7 @@ import Header from '../components/organisms/Header/Header';
 import AboutMe from '../components/organisms/AboutMe/AboutMe';
 import Technologies from '../components/organisms/Technologies/Technologies';
 import Projects from '../components/organisms/Projects/Projects';
+import Contact from '../components/organisms/Contact/Contact';
 
 function Root() {
   return (
@@ -17,6 +18,7 @@ function Root() {
         <AboutMe />
         <Technologies />
         <Projects />
+        <Contact />
       </ThemeProvider>
     </>
   );
