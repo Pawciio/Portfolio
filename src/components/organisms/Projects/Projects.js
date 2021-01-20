@@ -22,22 +22,37 @@ const WrapperProjectsBox = styled.div`
     .positionStyledElementEven {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
     }
 
     .positionStyledButtonBox {
       flex-direction: row-reverse;
     }
   }
+
+  @media ${({ theme }) => theme.mediaQueries.sm} {
+    p {
+      font-size: 18px;
+    }
+  }
 `;
 
 const WrapperElement = styled.div`
   max-width: 515px;
-  margin: 0 3em;
+  /* margin: 0 3em; */
 `;
 
 const WrapperButton = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4em;
+
+  @media ${({ theme }) => theme.mediaQueries.sm} {
+    a {
+      padding: 1em;
+      font-size: 16px;
+    }
+  }
 `;
 
 const DataTab = [
