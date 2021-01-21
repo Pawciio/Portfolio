@@ -25,7 +25,7 @@ const WrapperContent = styled.div`
 
   @media ${({ theme }) => theme.mediaQueries.md} {
     .StyleBox {
-      width: 100vw;
+      width: 100%;
     }
   }
 `;

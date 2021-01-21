@@ -20,7 +20,7 @@ const BackgroundDiv = styled.div`
       text-align: left;
 
       @media ${({ theme }) => theme.mediaQueries.md} {
-        width: 100vw;
+        width: 100%;
       }
     `}
 `;
