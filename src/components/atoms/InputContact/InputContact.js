@@ -11,6 +11,14 @@ const Input = styled.input`
   &:focus {
     outline: 2px solid ${({ theme }) => theme.colors.AdditionalColorSection};
   }
+
+  @media ${({ theme }) => theme.mediaQueries.sm} {
+    font-size: 16px;
+    width: 400px;
+  }
+  @media ${({ theme }) => theme.mediaQueries.xs} {
+    width: 290px;
+  }
 `;
 
 const Textarea = styled.textarea`
@@ -26,6 +34,15 @@ const Textarea = styled.textarea`
 
   &:focus {
     outline: 2px solid ${({ theme }) => theme.colors.AdditionalColorSection};
+  }
+
+  @media ${({ theme }) => theme.mediaQueries.sm} {
+    font-size: 16px;
+    width: 400px;
+  }
+
+  @media ${({ theme }) => theme.mediaQueries.xs} {
+    width: 290px;
   }
 `;
 

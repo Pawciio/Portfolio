@@ -45,6 +45,14 @@ const ButtonContact = styled.button`
       width: 100%;
     }
   }
+
+  @media ${({ theme }) => theme.mediaQueries.sm} {
+    padding: 0.5em 1.2em;
+    font-size: 18px;
+  }
+  @media ${({ theme }) => theme.mediaQueries.xs} {
+    font-size: 16px;
+  }
 `;
 
 export default ButtonContact;
