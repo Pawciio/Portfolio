@@ -21,7 +21,6 @@ body{
     font-family: "VarelaRound", sans-serif;
     font-size: 1.6rem;
     margin: 0;
-    max-width: 1920px;
 }
 
 `;
