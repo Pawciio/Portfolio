@@ -10,7 +10,6 @@ import Paragraph from '../../atoms/Paragraph/Paragraph';
 import MeIcon from '../../../assets/AboutMe/oMnieZdjęcie.png';
 import BanerAboutMeContact from '../../molecules/BanerAboutMeContact/BanerAboutMeContact';
 
-// import Data from '../../../assets/DataJson/AboutMeData.json';
 import rozwojIcon from '../../../assets/AboutMe/oMnieRozwoj.png';
 import jezykiIcon from '../../../assets/AboutMe/oMnieJezyki.png';
 import pasjeIcon from '../../../assets/AboutMe/oMniePasje.png';

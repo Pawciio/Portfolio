@@ -5,9 +5,13 @@ const BoxElement = styled.div`
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  width: 480px;
-  height: 500px;
+  width: 380px;
+  height: 450px;
   margin: 0 2em;
+
+  @media ${({ theme }) => theme.mediaQueries.xs} {
+    margin: 2em;
+  }
 `;
 
 export default BoxElement;
