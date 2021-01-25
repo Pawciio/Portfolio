@@ -90,7 +90,7 @@ const AboutMe = () => (
         <AddImager className="ImagePaweł" icons={MeIcon} width="200px" height="280px" margin="10px" />
 
         {DataAboutMe.map((item) => (
-          <WrapperElement>
+          <WrapperElement key={item.key}>
             <div className="titleBoxInAboutMe">
               <AddImager icons={item.image} width="65px" height="65px" />
               <Paragraph WhiteCol>{item.title}</Paragraph>
