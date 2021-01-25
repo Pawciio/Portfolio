@@ -7,8 +7,21 @@ const Wrapper = styled.div`
   right: 20px;
 
   .active {
-    background: white;
     transform: rotate(0);
+    box-shadow: none;
+
+    &::before {
+      content: '';
+      width: 120px;
+      height: 45px;
+      background: white;
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      border: 3px solid ${({ theme }) => theme.colors.ColorInContactBox};
+      transform: rotate(0);
+      box-shadow: 5px 5px 5px black;
+    }
   }
 `;
 
@@ -24,11 +37,11 @@ const BoxItem = styled.div`
 
 const Navigation = () => (
   <Wrapper>
-    <BoxItem className="active" />
-    <BoxItem />
-    <BoxItem />
-    <BoxItem />
-    <BoxItem />
+    <BoxItem id="Start" className="active" />
+    <BoxItem id="Omnie" />
+    <BoxItem id="Technologie" />
+    <BoxItem id="Projekty" />
+    <BoxItem id="Contact" />
   </Wrapper>
 );
 
