@@ -8,12 +8,14 @@ import AboutMe from '../components/organisms/AboutMe/AboutMe';
 import Technologies from '../components/organisms/Technologies/Technologies';
 import Projects from '../components/organisms/Projects/Projects';
 import Contact from '../components/organisms/Contact/Contact';
+import Navigation from '../components/organisms/Navigation/Navigation';
 
 function Root() {
   return (
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
+        <Navigation />
         <Header />
         <AboutMe />
         <Technologies />
