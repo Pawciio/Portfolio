@@ -34,10 +34,9 @@ const WrapperElement = styled.div`
     letter-spacing: 2px;
     line-height: 25px;
     margin-top: 3em;
-
-    ol {
-      padding: 0;
-    }
+    display: flex;
+    flex-direction: column;
+    padding: 0 4em;
   }
 
   @media ${({ theme }) => theme.mediaQueries.xs} {
@@ -55,14 +54,38 @@ const FlexBox = styled.div`
 
   @media ${({ theme }) => theme.mediaQueries.xs} {
     p {
-      font-size: 22px;
+      font-size: 20px;
     }
     .scaleIcons {
-      transform: scale(0.8);
-      margin: 1em 1.5em;
+      transform: scale(0.6);
+      margin: 1em 1em;
     }
   }
 `;
+
+const DataTechnologies = [
+  {
+    key: 0,
+    title: 'Czego się uczę',
+    stackList: ['NodeJs, ', 'Angular, ', 'TypeScript '],
+    bgImage: LearnBg,
+    iconImage: LearnIcon,
+  },
+  {
+    key: 1,
+    title: 'Co już umiem',
+    stackList: ['Html, ', 'Css/Scss, ', 'Javascript, ', 'Bootstrap 4, ', 'React, ', 'Redux, ', 'Sql '],
+    bgImage: IKnowBg,
+    iconImage: IKnowIcon,
+  },
+  {
+    key: 2,
+    title: 'Narzędzia',
+    stackList: ['VS Code, ', 'Npm/Yarn, ', 'Webpack, ', 'Figma, ', 'Xampp '],
+    bgImage: ToolsBg,
+    iconImage: ToolsIcon,
+  },
+];
 
 const Technologies = () => (
   <BackgroundSection Padding="5em 0" BgCol="black">
@@ -70,51 +93,17 @@ const Technologies = () => (
       <Paragraph WhiteCol>Poznane Technologie</Paragraph>
     </BanerTitle>
     <WrapperElement>
-      <BoxElement icons={LearnBg}>
-        <FlexBox>
-          <AddImager className="scaleIcons" icons={LearnIcon} width="80px" height="80px" margin="2em 3em" />
-          <Paragraph secondary WhiteCol Uppercase>
-            Czego się uczę
-          </Paragraph>
-        </FlexBox>
-        <ul>
-          <ol>NodeJS</ol>
-          <ol>Angular</ol>
-          <ol>TypeScript</ol>
-        </ul>
-      </BoxElement>
-      <BoxElement icons={IKnowBg}>
-        <FlexBox>
-          <AddImager className="scaleIcons" icons={IKnowIcon} width="80px" height="80px" margin="2em 3em" />
-          <Paragraph secondary WhiteCol Uppercase>
-            Co już umiem
-          </Paragraph>
-        </FlexBox>
-        <ul>
-          <ol>HTML</ol>
-          <ol>CSS/SCSS</ol>
-          <ol>JavaScript</ol>
-          <ol>React</ol>
-          <ol>Redux</ol>
-          <ol>Bootstrap 4</ol>
-          <ol>SQL</ol>
-        </ul>
-      </BoxElement>
-      <BoxElement icons={ToolsBg}>
-        <FlexBox>
-          <AddImager className="scaleIcons" icons={ToolsIcon} width="95px" height="80px" margin="2em 3em" />
-          <Paragraph secondary WhiteCol Uppercase>
-            Narzędzia
-          </Paragraph>
-        </FlexBox>
-        <ul>
-          <ol>VS Code</ol>
-          <ol>Xampp</ol>
-          <ol>NPM/Yarn</ol>
-          <ol>Figma</ol>
-          <ol>Webpack</ol>
-        </ul>
-      </BoxElement>
+      {DataTechnologies.map((item) => (
+        <BoxElement key={item.key} icons={item.bgImage}>
+          <FlexBox>
+            <AddImager className="scaleIcons" icons={item.iconImage} width="80px" height="80px" margin="2em 3em" />
+            <Paragraph secondary WhiteCol Uppercase>
+              {item.title}
+            </Paragraph>
+          </FlexBox>
+          <ul>{item.stackList}</ul>
+        </BoxElement>
+      ))}
     </WrapperElement>
   </BackgroundSection>
 );
