@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 const BackgroundDiv = styled.div`
-  background-color: ${({ theme, Bgblack }) => (Bgblack ? 'black' : theme.colors.AdditionalColorSection)};
+  background-color: ${({ theme, Bgblack }) => (Bgblack ? "black" : theme.colors.AdditionalColorSection)};
   width: 85vw;
   padding: 4em 2em;
   display: flex;

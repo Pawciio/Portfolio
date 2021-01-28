@@ -1,18 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
-import { theme } from '../../../Theme/MineStyle';
+import React from "react";
+import styled from "styled-components";
+import { theme } from "../../../Theme/MineStyle";
 
-import BackgroundSection from '../../atoms/BackgroundSection/BackgroundSection';
-import TitleBox from '../../atoms/TitleBox/TitleBox';
-import BackgroundDiv from '../../atoms/ContentBox/ContentBox';
-import AddImager from '../../atoms/AddImager/AddImager';
-import Paragraph from '../../atoms/Paragraph/Paragraph';
-import MeIcon from '../../../assets/AboutMe/oMnieZdjęcie.png';
-import BanerAboutMeContact from '../../molecules/BanerAboutMeContact/BanerAboutMeContact';
+import BackgroundSection from "../../atoms/BackgroundSection/BackgroundSection";
+import TitleBox from "../../atoms/TitleBox/TitleBox";
+import BackgroundDiv from "../../atoms/ContentBox/ContentBox";
+import AddImager from "../../atoms/AddImager/AddImager";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
+import MeIcon from "../../../assets/AboutMe/oMnieZdjęcie.png";
+import BanerAboutMeContact from "../../molecules/BanerAboutMeContact/BanerAboutMeContact";
 
-import rozwojIcon from '../../../assets/AboutMe/oMnieRozwoj.png';
-import jezykiIcon from '../../../assets/AboutMe/oMnieJezyki.png';
-import pasjeIcon from '../../../assets/AboutMe/oMniePasje.png';
+import rozwojIcon from "../../../assets/AboutMe/oMnieRozwoj.png";
+import jezykiIcon from "../../../assets/AboutMe/oMnieJezyki.png";
+import pasjeIcon from "../../../assets/AboutMe/oMniePasje.png";
 
 const WrapperContent = styled.div`
   padding: 6em 0;
@@ -62,21 +62,21 @@ const WrapperElement = styled.div`
 const DataAboutMe = [
   {
     id: 0,
-    title: 'Rozwój',
+    title: "Rozwój",
     discription:
-      'Aktualnie studiuję podyplomowo na kierunku Frontend z Angular, ciągle się dokształcam, robię kursy, czytam literaturę informatyczną.',
+      "Aktualnie studiuję podyplomowo na kierunku Frontend z Angular, ciągle się dokształcam, robię kursy, czytam literaturę informatyczną.",
     image: rozwojIcon,
   },
   {
     id: 1,
-    title: 'Języki',
-    discription: 'Język angielski znam na poziomie komunikatywnym ze słownictwem technicznym.',
+    title: "Języki",
+    discription: "Język angielski znam na poziomie komunikatywnym ze słownictwem technicznym.",
     image: jezykiIcon,
   },
   {
     id: 2,
-    title: 'Pasje',
-    discription: 'Moje pasje to również motoryzacja i gry komputerowe.',
+    title: "Pasje",
+    discription: "Moje pasje to również motoryzacja i gry komputerowe.",
     image: pasjeIcon,
   },
 ];

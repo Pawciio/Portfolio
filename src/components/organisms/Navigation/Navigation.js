@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   position: fixed;
@@ -11,7 +11,7 @@ const Wrapper = styled.div`
     box-shadow: none;
 
     &::before {
-      content: '';
+      content: "";
       width: 120px;
       height: 45px;
       background: white;

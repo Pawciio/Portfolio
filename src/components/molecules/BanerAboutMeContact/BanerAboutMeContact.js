@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import AdderImage from '../../atoms/AddImager/AddImager';
-import Paragraph from '../../atoms/Paragraph/Paragraph';
-import BgImageBaner from '../../../assets/AboutMe/oMnieBaner.png';
-import GitImage from '../../../assets/AboutMe/oMnieGit.png';
-import ContactImage from '../../../assets/AboutMe/oMnieKontakt.png';
+import AdderImage from "../../atoms/AddImager/AddImager";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
+import BgImageBaner from "../../../assets/AboutMe/oMnieBaner.png";
+import GitImage from "../../../assets/AboutMe/oMnieGit.png";
+import ContactImage from "../../../assets/AboutMe/oMnieKontakt.png";
 
 const Wrapper = styled.div`
   background-image: url(${BgImageBaner});

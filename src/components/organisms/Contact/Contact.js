@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import BackgroundSection from '../../atoms/BackgroundSection/BackgroundSection';
-import InputContact from '../../atoms/InputContact/InputContact';
-import ButtonContact from '../../atoms/Button/ButtonContact';
+import BackgroundSection from "../../atoms/BackgroundSection/BackgroundSection";
+import InputContact from "../../atoms/InputContact/InputContact";
+import ButtonContact from "../../atoms/Button/ButtonContact";
 
 const BgContactBox = styled.div`
   margin: 0.8em;
@@ -39,7 +39,7 @@ const TitleContact = styled.h2`
   margin-bottom: 2em;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -0.8em;
     left: -10%;
@@ -57,7 +57,7 @@ const TitleContact = styled.h2`
 `;
 
 const Contact = () => (
-  <BackgroundSection Padding="3em 0" Background={''}>
+  <BackgroundSection Padding="3em 0" Background={""}>
     <BgContactBox>
       <ContactBox>
         <TitleContact>Skontaktuj się</TitleContact>

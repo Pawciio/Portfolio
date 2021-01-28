@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ButtonContact = styled.button`
   padding: 0.8em 1.8em;
@@ -20,7 +20,7 @@ const ButtonContact = styled.button`
   overflow: hidden;
   z-index: 1;
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -29,7 +29,7 @@ const ButtonContact = styled.button`
     z-index: -2;
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;

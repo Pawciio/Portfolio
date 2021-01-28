@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import BackgroundSection from '../../atoms/BackgroundSection/BackgroundSection';
-import TitleBox from '../../atoms/TitleBox/TitleBox';
-import AddImgProj from '../../atoms/AddImager/AddImgProj';
-import ContentBox from '../../atoms/ContentBox/ContentBox';
-import Paragraph from '../../atoms/Paragraph/Paragraph';
-import Button from '../../atoms/Button/Button';
+import BackgroundSection from "../../atoms/BackgroundSection/BackgroundSection";
+import TitleBox from "../../atoms/TitleBox/TitleBox";
+import AddImgProj from "../../atoms/AddImager/AddImgProj";
+import ContentBox from "../../atoms/ContentBox/ContentBox";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
+import Button from "../../atoms/Button/Button";
 
-import SingleIcon from '../../../assets/TestImage.png';
+import SingleIcon from "../../../assets/TestImage.png";
 
 const WrapperProjectsBox = styled.div`
   display: flex;
@@ -58,27 +58,27 @@ const WrapperButton = styled.div`
 const DataTab = [
   {
     key: 0,
-    Title: 'Paul Coder',
-    disc: 'lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe',
+    Title: "Paul Coder",
+    disc: "lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
     image: SingleIcon,
-    hrefVisit: 'https://paulcoder.netlify.app/',
-    hrefGithub: 'https://github.com/Pawciio/PaulCoder',
+    hrefVisit: "https://paulcoder.netlify.app/",
+    hrefGithub: "https://github.com/Pawciio/PaulCoder",
   },
   {
     key: 1,
-    Title: 'Pretty Woman - Hair salon',
-    disc: 'lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe',
+    Title: "Pretty Woman - Hair salon",
+    disc: "lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
     image: SingleIcon,
-    hrefVisit: 'https://pretty-woman.netlify.app/',
-    hrefGithub: 'https://github.com/Pawciio/Paul-VisitingPage',
+    hrefVisit: "https://pretty-woman.netlify.app/",
+    hrefGithub: "https://github.com/Pawciio/Paul-VisitingPage",
   },
   {
     key: 2,
-    Title: 'I-community',
-    disc: 'lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe',
+    Title: "I-community",
+    disc: "lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
     image: SingleIcon,
-    hrefVisit: 'https://i-community.netlify.app/',
-    hrefGithub: 'https://github.com/Pawciio/Paul-iCommunity',
+    hrefVisit: "https://i-community.netlify.app/",
+    hrefGithub: "https://github.com/Pawciio/Paul-iCommunity",
   },
 ];
 

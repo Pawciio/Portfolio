@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const Input = styled.input`
   margin: 1em;
@@ -59,5 +60,10 @@ const InputContact = ({ placeholder, InTexarea }) => (
     )}
   </>
 );
+
+InputContact.propTypes = {
+  placeholder: PropTypes.string,
+  InTexarea: PropTypes.string,
+};
 
 export default InputContact;

@@ -1,11 +1,11 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import Background from '../../atoms/BackgroundSection/BackgroundSection';
-import BackgroundHeader from '../../../assets/BackgroundHeader/BackgroundHeader.png';
-import ContentHeaderBox from '../../molecules/ContentHeaderBox/ContentHeaderBox';
-import Paragraph from '../../atoms/Paragraph/Paragraph';
-import AddImager from '../../atoms/AddImager/AddImager';
-import Vicon from '../../../assets/Other-DetailImage/Vimage.png';
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import Background from "../../atoms/BackgroundSection/BackgroundSection";
+import BackgroundHeader from "../../../assets/BackgroundHeader/BackgroundHeader.png";
+import ContentHeaderBox from "../../molecules/ContentHeaderBox/ContentHeaderBox";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
+import AddImager from "../../atoms/AddImager/AddImager";
+import Vicon from "../../../assets/Other-DetailImage/Vimage.png";
 
 const slideDown = keyframes`
   0% {

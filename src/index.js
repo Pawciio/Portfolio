@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Root from "./Views/Root"
+import Root from "./Views/Root";
 import reportWebVitals from "./reportWebVitals";
-import './assets/Font/VarelaRound-Regular.ttf'; 
+import "./assets/Font/VarelaRound-Regular.ttf";
 
 ReactDOM.render(
   <React.StrictMode>
     <Root />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
 
 // If you want to start measuring performance in your app, pass a function

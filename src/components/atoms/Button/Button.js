@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Button = styled.a`
   padding: 1.2em;
   border: ${({ theme }) => `3px solid ${theme.colors.AdditionalColorSection}`};
-  background: ${({ theme, BgCol }) => (BgCol ? theme.colors.AdditionalColorSection : 'transparent')};
-  color: ${({ theme, Color }) => (Color ? theme.colors.AdditionalColorSection : 'black')};
+  background: ${({ theme, BgCol }) => (BgCol ? theme.colors.AdditionalColorSection : "transparent")};
+  color: ${({ theme, Color }) => (Color ? theme.colors.AdditionalColorSection : "black")};
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
@@ -18,7 +18,7 @@ const Button = styled.a`
   z-index: 1;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -27,18 +27,18 @@ const Button = styled.a`
     z-index: -2;
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: ${({ BgCol, theme }) => (BgCol ? 'black' : theme.colors.AdditionalColorSection)};
+    background-color: ${({ BgCol, theme }) => (BgCol ? "black" : theme.colors.AdditionalColorSection)};
     transition: all 0.3s;
     z-index: -1;
   }
   &:hover {
-    color: ${({ Color, theme }) => (Color ? 'black' : theme.colors.AdditionalColorSection)};
+    color: ${({ Color, theme }) => (Color ? "black" : theme.colors.AdditionalColorSection)};
     &:before {
       width: 100%;
     }

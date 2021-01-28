@@ -1,17 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import BackgroundSection from '../../atoms/BackgroundSection/BackgroundSection';
-import Paragraph from '../../atoms/Paragraph/Paragraph';
-import BoxElement from '../../atoms/BoxElement/BoxElement';
-import AddImager from '../../atoms/AddImager/AddImager';
+import BackgroundSection from "../../atoms/BackgroundSection/BackgroundSection";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
+import BoxElement from "../../atoms/BoxElement/BoxElement";
+import AddImager from "../../atoms/AddImager/AddImager";
 
-import LearnBg from '../../../assets/Technologies/componentBackCZegoUcz.png';
-import IKnowBg from '../../../assets/Technologies/componentBackCoJuzUm.png';
-import ToolsBg from '../../../assets/Technologies/componentBackNarze.png';
-import LearnIcon from '../../../assets/Technologies/techCzegoUcze.png';
-import IKnowIcon from '../../../assets/Technologies/techCoJuzUm.png';
-import ToolsIcon from '../../../assets/Technologies/techNarzedzia.png';
+import LearnBg from "../../../assets/Technologies/componentBackCZegoUcz.png";
+import IKnowBg from "../../../assets/Technologies/componentBackCoJuzUm.png";
+import ToolsBg from "../../../assets/Technologies/componentBackNarze.png";
+import LearnIcon from "../../../assets/Technologies/techCzegoUcze.png";
+import IKnowIcon from "../../../assets/Technologies/techCoJuzUm.png";
+import ToolsIcon from "../../../assets/Technologies/techNarzedzia.png";
 
 const BanerTitle = styled.div`
   background: ${({ theme }) => theme.colors.PaddingOrangeAboutMeBaner};
@@ -66,22 +66,22 @@ const FlexBox = styled.div`
 const DataTechnologies = [
   {
     key: 0,
-    title: 'Czego się uczę',
-    stackList: ['NodeJs, ', 'Angular, ', 'TypeScript '],
+    title: "Czego się uczę",
+    stackList: ["NodeJs, ", "Angular, ", "TypeScript "],
     bgImage: LearnBg,
     iconImage: LearnIcon,
   },
   {
     key: 1,
-    title: 'Co już umiem',
-    stackList: ['Html, ', 'Css/Scss, ', 'Javascript, ', 'Bootstrap 4, ', 'React, ', 'Redux, ', 'Sql '],
+    title: "Co już umiem",
+    stackList: ["Html, ", "Css/Scss, ", "Javascript, ", "Bootstrap 4, ", "React, ", "Redux, ", "Sql "],
     bgImage: IKnowBg,
     iconImage: IKnowIcon,
   },
   {
     key: 2,
-    title: 'Narzędzia',
-    stackList: ['VS Code, ', 'Npm/Yarn, ', 'Webpack, ', 'Figma, ', 'Xampp '],
+    title: "Narzędzia",
+    stackList: ["VS Code, ", "Npm/Yarn, ", "Webpack, ", "Figma, ", "Xampp "],
     bgImage: ToolsBg,
     iconImage: ToolsIcon,
   },

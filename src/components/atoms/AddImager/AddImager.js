@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const AdderImage = styled.div`
   background-image: url(${({ icons }) => icons});
