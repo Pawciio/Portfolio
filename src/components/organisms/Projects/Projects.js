@@ -8,7 +8,10 @@ import ContentBox from "../../atoms/ContentBox/ContentBox";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import Button from "../../atoms/Button/Button";
 
-import SingleIcon from "../../../assets/TestImage.png";
+// import SingleIcon from "../../../assets/Portfolio/TestImage.png";
+import PaulCoderIcon from "../../../assets/Portfolio/paul.png";
+import iCommunityIcon from "../../../assets/Portfolio/comm.png";
+import PreattyWomanIcon from "../../../assets/Portfolio/prete.png";
 
 const WrapperProjectsBox = styled.div`
   display: flex;
@@ -60,7 +63,7 @@ const DataTab = [
     key: 0,
     Title: "Paul Coder",
     disc: "lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
-    image: SingleIcon,
+    image: PaulCoderIcon,
     hrefVisit: "https://paulcoder.netlify.app/",
     hrefGithub: "https://github.com/Pawciio/PaulCoder",
   },
@@ -68,7 +71,7 @@ const DataTab = [
     key: 1,
     Title: "Pretty Woman - Hair salon",
     disc: "lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
-    image: SingleIcon,
+    image: PreattyWomanIcon,
     hrefVisit: "https://pretty-woman.netlify.app/",
     hrefGithub: "https://github.com/Pawciio/Paul-VisitingPage",
   },
@@ -76,7 +79,7 @@ const DataTab = [
     key: 2,
     Title: "I-community",
     disc: "lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
-    image: SingleIcon,
+    image: iCommunityIcon,
     hrefVisit: "https://i-community.netlify.app/",
     hrefGithub: "https://github.com/Pawciio/Paul-iCommunity",
   },
