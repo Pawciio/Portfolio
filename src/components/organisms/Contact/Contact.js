@@ -5,6 +5,8 @@ import BackgroundSection from "../../atoms/BackgroundSection/BackgroundSection";
 import InputContact from "../../atoms/InputContact/InputContact";
 import ButtonContact from "../../atoms/Button/ButtonContact";
 
+import BackgroundWallpaper from "../../../assets/BackgroundContact/BackgroundContact.png";
+
 const BgContactBox = styled.div`
   margin: 0.8em;
   padding: 3.5em;
@@ -57,7 +59,7 @@ const TitleContact = styled.h2`
 `;
 
 const Contact = () => (
-  <BackgroundSection Padding="3em 0" Background={""}>
+  <BackgroundSection Padding="3em 0" Background={BackgroundWallpaper}>
     <BgContactBox>
       <ContactBox>
         <TitleContact>Skontaktuj się</TitleContact>
