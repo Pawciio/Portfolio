@@ -30,13 +30,13 @@ const WrapperElement = styled.div`
   ul {
     color: white;
     font-size: 22px;
-    text-align: center;
     letter-spacing: 2px;
-    line-height: 25px;
-    margin-top: 3em;
+    line-height: 27px;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     padding: 0 4em;
+    list-style-type: circle;
   }
 
   @media ${({ theme }) => theme.mediaQueries.xs} {
@@ -67,28 +67,28 @@ const DataTechnologies = [
   {
     key: 0,
     title: "Czego się uczę",
-    stackList: ["NodeJs, ", "Angular, ", "TypeScript "],
+    stackList: ["NodeJs", "Angular", "TypeScript"],
     bgImage: LearnBg,
     iconImage: LearnIcon,
   },
   {
     key: 1,
     title: "Co już umiem",
-    stackList: ["Html, ", "Css/Scss, ", "Javascript, ", "Bootstrap 4, ", "React, ", "Redux, ", "Sql "],
+    stackList: ["Html", "Css/Scss", "Javascript", "Bootstrap 4", "React", "Redux", "Sql"],
     bgImage: IKnowBg,
     iconImage: IKnowIcon,
   },
   {
     key: 2,
     title: "Narzędzia",
-    stackList: ["VS Code, ", "Npm/Yarn, ", "Webpack, ", "Figma, ", "Xampp "],
+    stackList: ["VS Code", "Npm/Yarn", "Webpack", "Figma", "Xampp"],
     bgImage: ToolsBg,
     iconImage: ToolsIcon,
   },
 ];
 
 const Technologies = () => (
-  <BackgroundSection Padding="5em 0" BgCol="black">
+  <BackgroundSection id="Technologies" Padding="5em 0" BgCol="black">
     <BanerTitle>
       <Paragraph WhiteCol>Poznane Technologie</Paragraph>
     </BanerTitle>
@@ -101,7 +101,11 @@ const Technologies = () => (
               {item.title}
             </Paragraph>
           </FlexBox>
-          <ul>{item.stackList}</ul>
+          <ul>
+            {item.stackList.map((el) => (
+              <li key={el}> {el} </li>
+            ))}
+          </ul>
         </BoxElement>
       ))}
     </WrapperElement>
