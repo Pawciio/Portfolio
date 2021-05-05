@@ -83,10 +83,34 @@ const DataTab = [
     hrefVisit: "https://i-community.netlify.app/",
     hrefGithub: "https://github.com/Pawciio/Paul-iCommunity",
   },
+  {
+    key: 3,
+    Title: "Rock Paper Scissors",
+    disc: "Old Project. lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
+    image: iCommunityIcon,
+    hrefVisit: "https://pawciio.github.io/Rock_Paper_Scissors",
+    hrefGithub: "https://github.com/Pawciio/Rock_Paper_Scissors",
+  },
+  {
+    key: 4,
+    Title: "Cookie Clicker",
+    disc: "Old Project. lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
+    image: iCommunityIcon,
+    hrefVisit: "https://pawciio.github.io/Cookie-clicker",
+    hrefGithub: "https://github.com/Pawciio/Cookie-clicker",
+  },
+  {
+    key: 5,
+    Title: "Todo List",
+    disc: "Old Project. lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
+    image: iCommunityIcon,
+    hrefVisit: "https://pawciio.github.io/Todo-list",
+    hrefGithub: "https://github.com/Pawciio/Todo-list",
+  },
 ];
 
 const Projects = () => (
-  <BackgroundSection BgCol="white" Padding="6em 0">
+  <BackgroundSection id="Projects" BgCol="white" Padding="6em 0">
     <TitleBox>Zrealizowane Projekty</TitleBox>
     <WrapperProjectsBox>
       {DataTab.map((item) => (
