@@ -27,6 +27,7 @@ const WrapperElement = styled.div`
   padding-top: 15em;
   height: 100vh;
   max-height: 1100px;
+  min-height: 800px;
   position: relative;
 
   @media ${({ theme }) => theme.mediaQueries.xs} {
@@ -64,7 +65,7 @@ const Baner = styled.div`
 `;
 
 const Header = () => (
-  <Background Background={BackgroundHeader}>
+  <Background id="Header" Background={BackgroundHeader}>
     <WrapperElement>
       <ContentHeaderBox />
       <Baner>

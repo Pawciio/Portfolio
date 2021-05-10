@@ -82,7 +82,7 @@ const DataAboutMe = [
 ];
 
 const AboutMe = () => (
-  <BackgroundSection BgCol={theme.colors.AdditionalColorSection}>
+  <BackgroundSection id="AboutMe" BgCol={theme.colors.AdditionalColorSection}>
     <WrapperContent>
       <TitleBox>O mnie</TitleBox>
       <BackgroundDiv className="StyleBox" Bgblack>

@@ -47,15 +47,15 @@ const Textarea = styled.textarea`
   }
 `;
 
-const InputContact = ({ placeholder, InTexarea }) => (
+const InputContact = ({ placeholder, InTexarea, Name }) => (
   <>
     {InTexarea ? (
       <>
-        <Textarea placeholder={placeholder} />
+        <Textarea placeholder={placeholder} required name={Name} />
       </>
     ) : (
       <>
-        <Input placeholder={placeholder} />
+        <Input placeholder={placeholder} required name={Name} />
       </>
     )}
   </>
@@ -64,6 +64,7 @@ const InputContact = ({ placeholder, InTexarea }) => (
 InputContact.propTypes = {
   placeholder: PropTypes.string,
   InTexarea: PropTypes.string,
+  Name: PropTypes.string,
 };
 
 export default InputContact;

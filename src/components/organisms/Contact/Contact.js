@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import emailjs from "emailjs-com";
 
 import BackgroundSection from "../../atoms/BackgroundSection/BackgroundSection";
 import InputContact from "../../atoms/InputContact/InputContact";
 import ButtonContact from "../../atoms/Button/ButtonContact";
+import ContactThanksBox from "../../molecules/ContactThanksBox/ContactThanksBox";
 
 import BackgroundWallpaper from "../../../assets/BackgroundContact/BackgroundContact.png";
 
@@ -19,7 +21,7 @@ const BgContactBox = styled.div`
   }
 `;
 
-const ContactBox = styled.div`
+const ContactBox = styled.form`
   background: white;
   padding: 2em;
   display: flex;
@@ -58,18 +60,71 @@ const TitleContact = styled.h2`
   }
 `;
 
-const Contact = () => (
-  <BackgroundSection Padding="3em 0" Background={BackgroundWallpaper}>
-    <BgContactBox>
-      <ContactBox>
-        <TitleContact>Skontaktuj się</TitleContact>
-        <InputContact placeholder="Imię i nazwisko" />
-        <InputContact placeholder="Email" />
-        <InputContact InTexarea placeholder="Wiadomość" />
-        <ButtonContact>Wyślij</ButtonContact>
-      </ContactBox>
-    </BgContactBox>
-  </BackgroundSection>
-);
+class Contact extends React.Component {
+  state = {
+    sendButton: false,
+    validateForm: false,
+  };
+
+  changeStateValidateForm = () => {
+    const contactBox = document.getElementById("contactBox");
+    if (contactBox[0].value && contactBox[1].value && contactBox[2].value) {
+      this.setState({
+        validateForm: true,
+      });
+    }
+  };
+
+  sendButtonChange = () => {
+    this.changeStateValidateForm();
+    this.setState({
+      sendButton: true,
+    });
+    setTimeout(() => {
+      this.setState({
+        sendButton: false,
+        validateForm: false,
+      });
+    }, 10000);
+  };
+
+  closeButtonBox = () => {
+    this.setState({
+      sendButton: false,
+    });
+  };
+
+  render() {
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm(process.env, process.env, e.target, process.env).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+      e.target.reset();
+    };
+    return (
+      <BackgroundSection id="Contact" Padding="3em 0" Background={BackgroundWallpaper}>
+        {this.state.sendButton && this.state.validateForm ? <ContactThanksBox /> : null}
+        <BgContactBox>
+          <ContactBox id="contactBox" onSubmit={sendEmail}>
+            <TitleContact>Skontaktuj się</TitleContact>
+            <InputContact type="text" placeholder="Imię i nazwisko" Name="name" />
+            <InputContact type="email" placeholder="Email" Name="user_email" />
+            <InputContact InTexarea placeholder="Wiadomość" Name="message" />
+            <ButtonContact type="submit" onClick={this.sendButtonChange}>
+              Wyślij
+            </ButtonContact>
+          </ContactBox>
+        </BgContactBox>
+      </BackgroundSection>
+    );
+  }
+}
 
 export default Contact;
