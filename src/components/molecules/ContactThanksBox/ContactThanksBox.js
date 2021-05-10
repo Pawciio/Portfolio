@@ -35,9 +35,8 @@ const Wrapper = styled.div`
 const ContactThanksBox = () => {
   const closeModal = () => {
     const modalbox = document.querySelector("#ModalBox");
-    modalbox.remove();
+    modalbox.style.display = "none";
   };
-
   return (
     <Wrapper id="ModalBox">
       <button className="closeButton" onClick={() => closeModal()}>
