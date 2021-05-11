@@ -8,10 +8,12 @@ import ContentBox from "../../atoms/ContentBox/ContentBox";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import Button from "../../atoms/Button/Button";
 
-// import SingleIcon from "../../../assets/Portfolio/TestImage.png";
 import PaulCoderIcon from "../../../assets/Portfolio/paul.png";
 import iCommunityIcon from "../../../assets/Portfolio/comm.png";
 import PreattyWomanIcon from "../../../assets/Portfolio/prete.png";
+import CookieClicker from "../../../assets/Portfolio/CookieClicker.png";
+import ToDoList from "../../../assets/Portfolio/ToDoList.png";
+import RockPaperScissors from "../../../assets/Portfolio/RockPapaer.png";
 
 const WrapperProjectsBox = styled.div`
   display: flex;
@@ -41,16 +43,25 @@ const WrapperProjectsBox = styled.div`
 
 const WrapperElement = styled.div`
   max-width: 515px;
-  /* margin: 0 3em; */
+  .TitleProjects {
+    font-size: 28px;
+  }
+
+  @media ${({ theme }) => theme.mediaQueries.sm} {
+    .TitleProjects {
+      font-size: 24px;
+    }
+  }
 `;
 
 const WrapperButton = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: 4em;
+  justify-content: flex-end;
 
   @media ${({ theme }) => theme.mediaQueries.sm} {
+    justify-content: center;
     a {
       padding: 1em;
       font-size: 16px;
@@ -85,27 +96,27 @@ const DataTab = [
   },
   {
     key: 3,
-    Title: "Rock Paper Scissors",
+    Title: "Todo List",
     disc: "Old Project. lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
-    image: iCommunityIcon,
-    hrefVisit: "https://pawciio.github.io/Rock_Paper_Scissors",
-    hrefGithub: "https://github.com/Pawciio/Rock_Paper_Scissors",
+    image: ToDoList,
+    hrefVisit: "https://pawciio.github.io/Todo-list",
+    hrefGithub: "https://github.com/Pawciio/Todo-list",
   },
   {
     key: 4,
     Title: "Cookie Clicker",
     disc: "Old Project. lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
-    image: iCommunityIcon,
+    image: CookieClicker,
     hrefVisit: "https://pawciio.github.io/Cookie-clicker",
     hrefGithub: "https://github.com/Pawciio/Cookie-clicker",
   },
   {
     key: 5,
-    Title: "Todo List",
+    Title: "Rock Paper Scissors",
     disc: "Old Project. lorem ipsum et ament ble ble itd ble loremowe blee ipsumowo fe fe",
-    image: iCommunityIcon,
-    hrefVisit: "https://pawciio.github.io/Todo-list",
-    hrefGithub: "https://github.com/Pawciio/Todo-list",
+    image: RockPaperScissors,
+    hrefVisit: "https://pawciio.github.io/Rock_Paper_Scissors",
+    hrefGithub: "https://github.com/Pawciio/Rock_Paper_Scissors",
   },
 ];
 
@@ -117,7 +128,7 @@ const Projects = () => (
         <ContentBox key={item.key} className="positionStyledContent" secondary Bgblack>
           <AddImgProj src={item.image} />
           <WrapperElement className="positionStyledElementEven">
-            <Paragraph secondary WhiteCol Padding="1em 0">
+            <Paragraph className="TitleProjects" secondary WhiteCol Padding="1em 0">
               {item.Title}
             </Paragraph>
             <Paragraph WhiteCol>{item.disc}</Paragraph>

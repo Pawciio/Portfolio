@@ -7,7 +7,7 @@ const BoxElement = styled.div`
   background-size: cover;
   width: 380px;
   height: 450px;
-  margin: 0 2em;
+  margin: 1em 2em;
 
   @media ${({ theme }) => theme.mediaQueries.xs} {
     margin: 2em;

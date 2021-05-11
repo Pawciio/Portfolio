@@ -27,6 +27,10 @@ const WrapperElement = styled.div`
   display: flex;
   align-items: center;
 
+  a {
+    text-decoration: none;
+  }
+
   @media ${({ theme }) => theme.mediaQueries.xs} {
     p {
       font-size: 18px;
@@ -43,11 +47,15 @@ const BanerAboutMeContact = () => (
     <div className="bgColContener">
       <WrapperElement>
         <AdderImage className="scalImage" icons={ContactImage} width="90px" height="80px" margin="1em" />
-        <Paragraph WhiteCol>Skontaktuj się ze mną</Paragraph>
+        <a href="#Contact">
+          <Paragraph WhiteCol>Skontaktuj się ze mną</Paragraph>
+        </a>
       </WrapperElement>
       <WrapperElement>
         <AdderImage className="scalImage" icons={GitImage} width="75px" height="70px" margin="1em" />
-        <Paragraph WhiteCol>Zobacz moje projekty</Paragraph>
+        <a href="#Projects">
+          <Paragraph WhiteCol>Zobacz moje projekty</Paragraph>
+        </a>
       </WrapperElement>
     </div>
   </Wrapper>
