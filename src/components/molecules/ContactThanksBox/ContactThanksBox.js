@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   max-width: 70rem;
   background: whitesmoke;
-  padding: 4rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +14,11 @@ const Wrapper = styled.div`
   top: calc(50% - 106px);
   left: calc(50% - 231px);
   box-shadow: ${({ theme }) => `9px 7px 18px -10px ${theme.colors.AdditionalColorSection}`};
+
+  @media ${({ theme }) => theme.mediaQueries.xs} {
+    font-size: 13px;
+    left: calc(61.5% - 231px);
+  }
 
   .closeButton {
     border: none;
@@ -28,7 +33,7 @@ const Wrapper = styled.div`
   }
 
   @media ${({ theme }) => theme.mediaQueries.xs} {
-    padding: 0.8em;
+    padding: 1.8em;
   }
 `;
 

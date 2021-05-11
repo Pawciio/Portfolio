@@ -24,6 +24,13 @@ const Wrapper = styled.div`
       box-shadow: 5px 5px 5px black;
       transition: all 0.5s;
     }
+
+    @media ${({ theme }) => theme.mediaQueries.xs} {
+      &::before {
+        height: 30px;
+        width: 120px;
+      }
+    }
   }
 
   .activeA {
@@ -32,6 +39,10 @@ const Wrapper = styled.div`
     right: 73px;
     top: 10px;
     transition: all 0.5s ease-in-out;
+
+    @media ${({ theme }) => theme.mediaQueries.xs} {
+      top: 3px;
+    }
   }
 `;
 
@@ -47,6 +58,11 @@ const BoxItem = styled.div`
   &::before {
     transition: all 0.5s;
   }
+
+  @media ${({ theme }) => theme.mediaQueries.xs} {
+    width: 30px;
+    height: 30px;
+  }
 `;
 
 const NavA = styled.a`
@@ -59,6 +75,9 @@ const NavA = styled.a`
   &:hover {
     right: 78px;
     transition: all 0.5s ease-in-out;
+  }
+  @media ${({ theme }) => theme.mediaQueries.xs} {
+    font-size: 13px;
   }
 `;
 
